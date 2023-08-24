@@ -53,7 +53,8 @@ double calculateValue(const YearData data[], double amount, int investYear, int 
         }
 
         
-         double amount = amount * ((interestRate) / 100 )+ 1;
+         double amount = (1 + (interestRate / 100))*amount;
+        
         // value *= effectiveRate;
     }
     return amount;
